@@ -1,0 +1,59 @@
+div {
+    border: black 1px solid;
+    // padding: 1em;
+}
+
+.epoch {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.ruler {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.events {
+    grid-template-columns: 1fr;
+    background: #eee;
+}
+
+
+.ruler {
+    grid-template-columns: 50px auto;
+}
+
+.rulername, .epochname {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0px;
+    background: coral;
+}
+
+.epochname {
+    background: #FFD700;
+}
+
+body > .epoch:nth-child(odd) > .epochname {
+    background: orange;
+    
+}
+.events > div:nth-child(odd) {
+    background: #ddd;
+}
+
+.year {
+    color: gold;
+    background: black;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.event {
+    padding: 2px 5px;
+}

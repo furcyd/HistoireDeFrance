@@ -1,10 +1,10 @@
 div {
     border: black 1px solid;
-    // padding: 1em;
 }
 
 .epoch {
     display: grid;
+    grid-gap: 0px;
     grid-template-columns: 50px auto;
 }
 
@@ -14,14 +14,11 @@ div {
 }
 
 .events {
+    display: grid;
     grid-template-columns: 1fr;
     background: #eee;
 }
 
-
-.ruler {
-    grid-template-columns: 50px auto;
-}
 
 .rulername, .epochname {
     writing-mode: vertical-lr;
@@ -39,6 +36,9 @@ div {
     background: #FFD700;
 }
 
+.rulername {
+
+}
 body > .epoch:nth-child(odd) > .epochname {
     background: orange;
     
@@ -56,4 +56,5 @@ body > .epoch:nth-child(odd) > .epochname {
 
 .event {
     padding: 2px 5px;
+    border: 1px solid black;
 }
